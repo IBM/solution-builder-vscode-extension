@@ -1,5 +1,3 @@
-# solution-builder-vscode-extension
-Documentation and issue hosting for IBM's Solution Builder Vscode Extension
 # Getting started with IBM Cloud Solution Builder extension for Visual Studio Code
 
 Welcome to the experimental version of IBM Cloud Solution Builder extension for Visual Studio Code. This is an experimental feature that is available for evaluation and testing purposes and might change without notice.

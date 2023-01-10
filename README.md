@@ -68,13 +68,13 @@ If you double-click on an element in the Outline view, the cursor is placed on t
 
 ### Catalog Explorer view
 
-In the VS Code Activity bar, click the Catalog Explorer icon [<img src="https://github.com/ibm/solution-builder-vscode-extension/blob/main/resources/dep.svg" height="12"/>](https://github.com/ibm/solution-builder-vscode-extension/blob/main/resources/dep.svg). The Catalog Explorer view lists available modules. Use the buttons at the top to perform various actions (hover over them to see what they do).
+In the VS Code Activity bar, click the Catalog Explorer icon [<img src="https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dep.png" height="12"/>](https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dep.png). The Catalog Explorer view lists available modules. Use the buttons at the top to perform various actions (hover over them to see what they do).
 
 If you expand one of the modules, the following inline icons are displayed:
 
-[<img src="https://github.com/ibm/solution-builder-vscode-extension/blob/main/resources/dark/launch_dk.png" height="12"/>](https://github.com/ibm/solution-builder-vscode-extension/blob/main/resources/dark/launch_dk.png) Opens a browser page to the module's repository for documentation viewing.
+[<img src="https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/launch_dk.png" height="12"/>](https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/launch_dk.png) Opens a browser page to the module's repository for documentation viewing.
 
-[<img src="https://github.com/ibm/solution-builder-vscode-extension/blob/main/resources/dark/add.png" height="12"/>](https://github.com/ibm/solution-builder-vscode-extension/blob/main/resources/dark/add.png) Pastes a snippet of that module into your blueprint.
+[<img src="https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/add.png" height="12"/>](https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/add.png) Pastes a snippet of that module into your blueprint.
 
 ### Problems view
 

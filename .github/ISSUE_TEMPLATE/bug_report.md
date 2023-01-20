@@ -19,7 +19,7 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Links to blueprint/solution YAMLs, terraform templates**
+**Links to blueprint/solution YAMLs, Terraform templates**
 If applicable, link to public examples that can be used to reproduce your issue. For example repos, catalog entries, and so on.
 
 **Versions**

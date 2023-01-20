@@ -19,7 +19,7 @@ A clear and concise description of any alternative solutions or features you've 
 **Screenshots**
 Include screenshots that will clarify your issue and/or solution
 
-**Links to blueprints, solution yamls, terraform templates**
+**Links to blueprints/solution yamls, terraform templates**
 If applicable, link to public examples that can be used to reproduce your issue. repos, catalog entries, etc
 
 **Additional context**

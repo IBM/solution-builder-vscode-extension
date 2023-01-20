@@ -8,9 +8,9 @@ assignees: ''
 ---
 
 **Describe the bug**
-A clear and concise description of what the bug is.
+Provide a clear and concise description of the bug.
 
-**To Reproduce**
+**Steps to reproduce**
 Detailed steps to reproduce the behavior:
 
 **Expected behavior**
@@ -19,13 +19,13 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Links to blueprint/solution yamls, terraform templates**
-If applicable, link to public examples that can be used to reproduce your issue. repos, catalog entries, etc
+**Links to blueprint/solution YAMLs, terraform templates**
+If applicable, link to public examples that can be used to reproduce your issue. For example repos, catalog entries, and so on.
 
 **Versions**
  - OS: one of win32-x64, win32-ia32, win32-arm64, linux-x64, linux-arm64, linux-armhf, darwin-x64, darwin-arm64, alpine-x64, alpine-arm64, web
- - Vscode Version (eg v1.62.0):
- - SB Extension version (eg v1.62.0):
+ - Vscode Version (for example v1.62.0):
+ - SB Extension version (for example v1.62.0):
 
 **Additional context**
 Add any other context about the problem here.

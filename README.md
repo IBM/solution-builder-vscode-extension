@@ -17,44 +17,34 @@ Solution Builder helps you build and customize a solution that is based on a dep
 ## Definitions
 
 - Solution: a combination of capabilities from one or more technologies that solves a customer-defined problem.
-- Module: standalone deployable code that can be part of multiple reference architectures, used individually. This file is used to generate terraform or Schematics Blueprints for automation.
+- Module: standalone deployable code that can be part of multiple reference architectures, used individually. This file is used to generate Terraform or Schematics Blueprints for automation.
 - Deployable architecture: can have one or more architecture variations, and multiple configurations for those architectures, based on the customer business needs. These architectures are opinionated, predefined, and preconfigured to meet regulated industry requirements. They can be for infrastructure, software, a workload, or a full stack.
 
-## Guide
+## Getting started with your blueprint YAML
 
-The following instructions assume that you already have a repo that contains your blueprint YAML file and that you cloned it locally.
+1. Locally clone the repos that contain your blueprint YAML source files.
+1. In VS Code, click the **Explorer** icon (MacOS: Shift+Command+E).
+1. Open the local folder that contains the blueprint YAML as a new VS Code workspace.
+1. Open your blueprint YAML file.
+1. In the navigation pane, open the **Outline** view.
+1. Keep the **Solution** section open, and collapse the **YAML** section and any other sections.
 
-- In VS Code, open your blueprint YAML file.
-- Add modules by clicking the Catalog Explorer icon in the Activity Bar. The Catalog Explorer lists all the modules from [TechZone Deployer](https://modules.cloudnativetoolkit.dev/).
-- Press Ctrl+Space to show completions, which are a list of Inputs and Values that will work in a specific “value” field.
-- Each module has additional metadata that Solution Builder reads and displays.
+You'll now see the **Solution** section, which represents the structure of the blueprint YAML file as a solution. If you double-click on an element in the **Outline** view, the cursor is placed on the corresponding line of code.
+
+## Adding modules to your blueprint
+
+1. View modules by clicking the **Catalog Explorer** icon [<img src="https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dep.png" height="12"/>](https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dep.png) in the Activity Bar. The **Catalog Explorer** lists available modules from TechZone Deployer. Each module has additional metadata that Solution Builder reads and displays.
+1. Use the buttons at the top to perform various actions (hover over them to see what they do). For example, refresh, search, expand, and collapse.
+1. If you If you expand one of the modules, the following inline icons are displayed:
+   [<img src="https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/launch_dk.png" height="12"/>](https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/launch_dk.png) Opens a browser page to the module's repository for viewing its documentation.
+   [<img src="https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/add.png" height="12"/>](https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/add.png) Pastes a snippet of that module into your blueprint.
+
+- Press **Ctrl+Space** to show completions, which are a list of Inputs and Values that will work in a specific “value” field.
 - The edit icon “Insert Module Snippet” adds a full module snippet with blank value fields into the end of the YAML file.
 
-### Viewing the Solution section of your YAML file
+## Troubleshooting your code
 
-Use the Outline view to see the Solution section on your blueprint YAML file.
-
-Collapse all sections in the Outline view except for the Solution section. The Solution section represents the structure of the blueprint as a solution.
-
-If you double-click on an element in the Outline view, the cursor is placed on the relevant line of code.
-
-### Viewing available modules
-
-Use the Catalog Explorer view to view lists of available modules.
-
-In the VS Code Activity bar, click the Catalog Explorer icon [<img src="https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dep.png" height="12"/>](https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dep.png).
-
-Use the buttons at the top to perform various actions (hover over them to see what they do). For example, refresh, search, expand, and collapse.
-
-If you expand one of the modules, the following inline icons are displayed:
-
-[<img src="https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/launch_dk.png" height="12"/>](https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/launch_dk.png) Opens a browser page to the module's repository for viewing its documentation.
-
-[<img src="https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/add.png" height="12"/>](https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/add.png) Pastes a snippet of that module into your blueprint.
-
-## Troubleshooting
-
-This extension uses quick fixes and squiggly lines to guide you to issues in your code that you need to fix.
+The IBM Cloud Solution Builder extension uses quick fixes and squiggly lines to guide you to issues in your code that you need to fix.
 
 After you enable the Solution Builder extension in VS Code, any time you open a blueprint YAML file in VS Code, the extension automatically checks the file for any coding issues. The problematic code is underlined with a squiggly line, which you can hover over to see more details about what the problem is and how to fix it. Different colors of squiggly lines indicate the type of problem:
 - Yellow for warnings
@@ -69,12 +59,12 @@ VS Code also highlights the warnings in a few other places throughout the editor
 
 ### Applying quick fixes
 
-If a quick fix is available, a yellow lightbulb icon will appear when you hover over the warning in your file.
+If a quick fix is available, a yellow lightbulb icon appears when you hover over the warning in your file.
 
 To apply the specific quick fix, click the icon and select an action, such as `Select the first available matching output` or `Learn more about the <module name> module…`.
 
 The `Learn more` quick fix opens a browser window that redirects you to the public GitHub repository for that specific module. If VS Code prompts you to consent to opening the web page before redirecting you, click Open.
 
 To pop up a menu of quick fix suggestions, use these keyboard shortcuts:
-- For Mac iOS, use Command+.  to pop up a menu of quick fix suggestions.
-- For Windows, use Ctrl+..
+- For MacOS, use **Command**+**.** to pop up a menu of quick fix suggestions.
+- For Windows, use **Ctrl**+**.** to see the quick fix suggestions.

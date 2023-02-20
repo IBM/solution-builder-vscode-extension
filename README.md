@@ -1,10 +1,10 @@
-# IBM Cloud Solution Builder <sup>Beta</sup>
+# IBM Cloud Solution Editor <sup>Beta</sup>
 
-IBM Cloud Solution Builder extension for [Visual Studio Code](https://code.visualstudio.com/) helps you customize your [IBM Cloud](https://cloud.ibm.com) infrastructure by providing syntax highlighting, linting, module management, and code completion for your deployable architecture.
+IBM Cloud Solution Editor extension for [Visual Studio Code](https://code.visualstudio.com/) helps you customize your [IBM Cloud](https://cloud.ibm.com) infrastructure by providing syntax highlighting, linting, module management, and code completion for your deployable architecture.
 
 This is an experimental feature that is available for evaluation and testing purposes and might change without notice.
 
-Solution Builder currently supports text editing of IBM Cloud Schematics blueprint YAML files.
+Solution Editor currently supports text editing of IBM Cloud Schematics blueprint YAML files.
 
 Use this extension to build and customize your deployable architecture by editing your blueprint YAML file and adding modules and input values.
 
@@ -35,7 +35,7 @@ You'll now see the **Solution** section, which represents the structure of the b
 
 ## Adding modules to your blueprint
 
-1. View modules by clicking the **Solution Builder** icon [<img src="https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dep.png" height="12"/>](https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dep.png) in the Activity Bar. Each module has additional metadata that Solution Builder reads and displays.
+1. View modules by clicking the **Solution Editor** icon [<img src="https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dep.png" height="12"/>](https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dep.png) in the Activity Bar. Each module has additional metadata that Solution Editor reads and displays.
 1. Use the buttons in the catalog explorer view to perform various actions (hover over them to see what they do). For example, Refresh, Search, Reset, Expand, and Collapse.
 1. When you expand or hover over a module name, click either of the following icons:
    [<img src="https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/launch_dk.png" height="12"/>](https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/launch_dk.png) Opens a browser page to the module's repository for viewing its documentation.
@@ -51,9 +51,9 @@ Use the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinte
 
 ## Troubleshooting your code
 
-The IBM Cloud Solution Builder extension uses Code Actions, Quick Fixes, and squiggly lines to guide you to issues in your code that you need to fix.
+The IBM Cloud Solution Editor extension uses Code Actions, Quick Fixes, and squiggly lines to guide you to issues in your code that you need to fix.
 
-After you enable the Solution Builder extension in VS Code, any time you open a blueprint YAML file in VS Code, the extension automatically checks the file for any coding issues. The problematic code is underlined with a squiggly line, which you can hover over to see more details about what the problem is and how to fix it. Different colors of squiggly lines indicate the type of problem:
+After you enable the Solution Editor extension in VS Code, any time you open a blueprint YAML file in VS Code, the extension automatically checks the file for any coding issues. The problematic code is underlined with a squiggly line, which you can hover over to see more details about what the problem is and how to fix it. Different colors of squiggly lines indicate the type of problem:
 - Yellow for warnings
 - Red for errors
 - Blue for informational diagnostics

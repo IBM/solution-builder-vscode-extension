@@ -35,7 +35,7 @@ You'll now see the **Solution** section, which represents the structure of the b
 
 ## Adding modules to your blueprint
 
-1. View modules by clicking the **Solution Editor** icon [<img src="https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dep.png" height="12"/>](https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dep.png) in the Activity Bar. Each module has additional metadata that Solution Editor reads and displays.
+1. View modules by clicking the **IBM Cloud Solution Editor** icon [<img src="https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dep.png" height="12"/>](https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dep.png) in the Activity Bar. Each module has additional metadata that Solution Editor reads and displays.
 1. Use the buttons in the catalog explorer view to perform various actions (hover over them to see what they do). For example, Refresh, Search, Reset, Expand, and Collapse.
 1. When you expand or hover over a module name, click either of the following icons:
    [<img src="https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/launch_dk.png" height="12"/>](https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/launch_dk.png) Opens a browser page to the module's repository for viewing its documentation.

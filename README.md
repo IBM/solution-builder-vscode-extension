@@ -4,34 +4,39 @@ IBM Cloud Solution Editor extension for [Visual Studio Code](https://code.visual
 
 This is an experimental feature that is available for evaluation and testing purposes and might change without notice.
 
-Solution Editor currently supports text editing of IBM Cloud Schematics blueprint YAML files.
+Use this extension to build and customize your deployable architecture by editing your blueprint YAML file and adding modules and input values. Solution Editor currently supports text editing of IBM Cloud Schematics blueprint YAML files.
 
-Use this extension to build and customize your deployable architecture by editing your blueprint YAML file and adding modules and input values.
+## Prerequisites
+- If you prefer to use keyboard shortcuts in VS Code, see the following references:
+   - [MacOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
+   - [Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
+   - [Microsoft Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 
 ## Features
 
 - Completions: get available matching outputs when triggered on a module's input value.
-- Diagnostics: reports errors in input values, such as mismatched type or no value supplied.
 - Custom Outline view: solution-specific outline structure highlights modules with their inputs and outputs.
 - Code Actions: links to the module's repository URL.
 - Catalog Explorer view: a list of supported Terraform modules from the IBM Terraform provider that can be used to author solutions.
+- Diagnostics: reports errors in input values, such as mismatched type or no value supplied.
+- Debug logging: logs are located in the Output panel.
 
 ## Definitions
 
 - Solution: a combination of capabilities from one or more technologies that solves a customer-defined problem.
 - Module: standalone deployable code that can be part of multiple reference architectures, used individually. This file is used to generate Terraform or Schematics Blueprints for automation.
-- Deployable architecture: can have one or more architecture variations, and multiple configurations for those architectures, based on the customer business needs. These architectures are opinionated, predefined, and preconfigured to meet regulated industry requirements. They can be for infrastructure, software, a workload, or a full stack.
+- Deployable architecture: can have one or more architecture variations, and multiple configurations for those architectures, based on the customer business needs. These architectures are opinionated, predefined, and preconfigured to meet regulated industry requirements. They can be for infrastructure, software, a workload, or a full stack.
 
 ## Getting started with your blueprint YAML
 
 1. Locally clone the repos that contain your blueprint YAML source files.
-1. In VS Code, click the **Explorer** icon (MacOS: Shift+Command+E).
-1. Open the local folder that contains the blueprint YAML.
+1. In VS Code, click the **Explorer** icon, or select **View** > **Explorer**.
+1. Open the local folder that contains the blueprint YAML file.
 1. Open your blueprint YAML file.
-1. In the navigation pane, open the **Outline** view.
-1. Keep the **Solution** section open, and collapse the **YAML** section and any other sections.
+1. In the File Explorer, open the **Outline** view.
+1. In the **Solution** section, double-click an element in the **Outline** view. The cursor is placed on the corresponding line of code in the blueprint YAML file.
 
-You'll now see the **Solution** section, which represents the structure of the blueprint YAML file as a solution. If you double-click on an element in the **Outline** view, the cursor is placed on the corresponding line of code.
+The **Solution** section represents the structure (symbol tree) of the blueprint YAML file.
 
 ## Adding modules to your blueprint
 
@@ -42,12 +47,21 @@ You'll now see the **Solution** section, which represents the structure of the b
    [<img src="https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/add.png" height="12"/>](https://raw.githubusercontent.com/IBM/solution-builder-vscode-extension/main/resources/dark/add.png) Pastes a full snippet of the selected module into the end of your YAML file.
 1. Press **Ctrl+Space** to show completions, which are a list of Inputs and Values that work in a specific “value” field.
 
-## Command Palette extras
+## Creating an empty blueprint
 
-Use the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) for more options. (MacOS: **Shift**+**Command**+**P**, Windows and Linux: **Ctrl**+**Shift**+**P**)
+This feature creates a YAML file with a outline of a blueprint.
 
-- **Create an empty blueprint** - creates a YAML file with a outline of a blueprint. You must save the file before you can use the editor features.
-- **Insert a Terraform module snippet into a blueprint** - you provide a GitHub repository URL to a Terraform module, and the snippet is pasted into an open blueprint. The snippet contains all the module's variables as inputs and all the outputs with associated metadata. This option works only if you have a blueprint YAML file open and active.
+You can create an empty blueprint in the following ways:
+- Select **File** > **New File** > **Create an empty blueprint**.
+- Use the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) (select **View** > **Command Palette**), and then select **Create an empty blueprint**. (Shortcut keys - MacOS: **Shift**+**Command**+**P**, Windows and Linux: **Ctrl**+**Shift**+**P**)
+
+You must save the file before you can use the editor features.
+
+## Inserting a Terraform module snippet into a blueprint
+
+You provide a GitHub repository URL to a Terraform module, and the snippet is pasted into an open blueprint. The snippet contains all the module's variables as inputs and all the outputs with associated metadata. This option works only if you have a blueprint YAML file open and active.
+
+Use the [Command Palette](https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette) (select **View** > **Command Palette**), and then select **Insert a Terraform module snippet into a blueprint**.
 
 ## Troubleshooting your code
 
@@ -75,3 +89,18 @@ The `Learn more` Quick Fix opens a browser window that redirects you to the publ
 To pop up a menu of Quick Fix suggestions, use these keyboard shortcuts:
 - MacOS: **Command**+**.**
 - Windows and Linux: **Ctrl**+**.**
+
+### Accessing log files
+
+Logs are located in the Output panel. To open the Output panel, click **View** > **Output** (Shift+Command+U).
+
+From the output channel dropdown, select the following logs:
+
+- For client logs, select **IBM Cloud Solution Editor**.
+- For language server and SDK logs, select **IBM Cloud Solution Editor Language Server**.
+
+You can change the log level by using `Developer: Set Log Level...` in the Command Palette (**View** > **Command Palette**).
+
+This extension also creates logs in the file system:
+- `$HOME/.ibm-se-*.log` for MacOS and Linux
+- `%AppData%\.ibm-se-*.log` for Windows
